@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+    <div class="conteudo">
+        <div class=" caixa-texto">
+            <h2> Não é apenas Café é <span> Starbucks</span></h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptates beatae sapiente ex
+                necessitatibus assumenda fugiat aspernatur harum ipsa similique explicabo magnam, omnis sed non natus
+                aliquam iure excepturi quam?
+            </p>
+
+            <button class="btn"> Aperte aqui</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="/img/img1.png" alt="copa starbucks" class="starbucks">
+        </div>
+    </div>
+
+
+    <div class="menu">
+        <img src="/img/img-pequena1.png" class="copo-pequeno verde">
+        <img src="/img/img-pequena2.png" class="copo-pequeno rosinha">
+        <img src="/img/img-pequena3.png" class="copo-pequeno rosa">
+    </div>
+
+
+
+</body>
+
+<script>
+    let span = document.querySelector("span")
+    let botao = document.querySelector("button")
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+    let rosinha = document.querySelector(".rosinha")
+    let rosa = document.querySelector(".rosa")
+
+    rosinha.addEventListener("click", () => {
+        imgCopo.src = "./img/img2.png"
+        circulo.style.background = "#eb7495"
+        span.style.color = "#eb7495"
+        botao.style.background = "#eb7495"
+    })
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#017143"
+        span.style.color = "#017143"
+        botao.style.background = "#017143"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+        span.style.color = "#d752b1"
+        botao.style.background = "#d752b1"
+    })
+
+
+</script>
+
+</html>
